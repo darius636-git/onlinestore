@@ -1,38 +1,67 @@
-.btn{
-    background-color: blue;
+:root {
+    --color-primary: #2500f6;
+    --color-accent: #ffd700;
+    --color-text: #333;
+    --color-white: #ffffff;
+    --spacing-unit: 1rem;
+    --border-radius: 8px;
+
+}
+
+body{
+    font-family: system-ui, -apple-system, sans-serif;
+    color: var(--color-text);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-unit);
+
+
+    background: linear-gradient(90deg rgba(42, 123, 155,1) 0%, rgba(87, 199, 133, 1 ) 50%, rgba(237,221,83,1) 100%);
+}
+
+.landing-container{
+    background-color: var(--color-white);
+    width: 100%;
+    max-width: 700px;
+    height: 75rem;
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.subtitle{
+    margin-bottom: 2;
+}
+
+.btn-primary{
+    height: 2.3rem;
+    width: 15rem;
+    background-color: var(--color-primary);
     color: white;
-    width: 250px;
-    height: 40px;
-    border: navy;
 }
 
-
-.input-1{
-    width: 400px;
-    height: 35px;
+.input-field{
+    width: 20rem;
+    height: 2rem;
 }
 
-.pre-1{
-    font-family: sans-serif;
-
-}
-
-.h-1{
-    font-family: sans-serif;
-}
-
-.p-1{
-    font-family: sans-serif;
-}
-
-.body-color{
-    background: #2A7B9B;
-background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-}
-
-.content-1{
-    background-color: white;
-    width: 60%;
-    height: 80rem;
-    margin: 0 auto;
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+    border:0
+;
 }

@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quasbly - Book Review Newsletter and Platform</title>
+    <meta name = "description" content = "Quasbly is an online book review site and ecommerce platform">
+    <title>Quasbly - Find your favorite books and review them!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body-color">
 
-    <div class="content-1">
+    <main class="landing-container">
+
+        <header class="hero-section">
 
     <h1 class="h-1">Welcome to Quasbly.com!</h1>
     <p class="p-1">This is the first landing page for the Book Review Site and blog.</p>
 
-    <form>
+    </header>
 
-        <input type="email" class="input-1" placeholder="Enter your email adress...">
-        <button class="btn">Join the Waitlist</button>
-    
+    <form class="signup-form" action="#" method="post">
+        <div class="form-group">
+            <label for="email-adress" class="visually-hidden">Email Adress</label>
+        <input type="email" id="email-adress" name="email" class="input-field" placeholder="Enter your email adress" required>
+        <button type= "submit" class="btn-primary">Join the Waitlist</button>
+            </div>
 
     </form>
 
-    <pre class="pre-1">
-Join our newsletter and waitlist, in order to get updates
-and reviews on bestsellers, or obscure books. If by any chance
-you do sign up, we'll be grateful for you doing so
-    </pre>
-    </div>
+    <p class="p-2">Join our newsletter and waitlist, in order to get updatesand reviews on bestsellers, or obscure books. If by any chance you do sign up, we'll be grateful for you doing so
+    </p>
+</main>
     
 </body>
 </html>
